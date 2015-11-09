@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_smoke"
+    >
+
+    <include
+        android:id="@+id/toolbar_order_summary_activity"
+        layout="@layout/layout_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:layout_below="@id/toolbar_order_summary_activity"
+        >
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:id="@+id/order_summary_layout_order_summary_activity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <com.healthyfood.eatrite.custom.CustomTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Items"
+                    android:textSize="@dimen/text_size_double_extra_large"
+                    android:padding="@dimen/padding"
+                    />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#000"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+    <com.healthyfood.eatrite.custom.CustomButton
+        android:id="@+id/place_order_button_order_summary_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="PLACE ORDER"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        />
+
+
+</RelativeLayout>

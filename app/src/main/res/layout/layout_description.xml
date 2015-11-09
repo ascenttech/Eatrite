@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient"
+    >
+
+
+    <com.healthyfood.eatrite.custom.CustomTextView
+        android:id="@+id/description_text_included"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:textSize="@dimen/text_size"
+        android:text="Description"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        />
+
+    <com.healthyfood.eatrite.custom.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_theme_color">#C13A2C</color>
+
+    <color name="black">#000</color>
+    <color name="black_transparent">#80000000</color>
+    <color name="white">#FFF</color>
+    <color name="white_smoke">#DEDEDE</color>
+
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash_screen"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+
+        <com.healthyfood.eatrite.custom.CustomEditText
+            android:id="@+id/first_name_edit_register_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="FIRST NAME"
+            />
+        <com.healthyfood.eatrite.custom.CustomEditText
+            android:id="@+id/last_name_edit_register_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="LAST NAME"
+            />
+        <com.healthyfood.eatrite.custom.CustomEditText
+            android:id="@+id/phone_number_edit_register_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="PHONE NUMBER"
+            android:inputType="number"
+            />
+        <com.healthyfood.eatrite.custom.CustomEditText
+            android:id="@+id/email_id_edit_register_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="EMAIL ID"
+            />
+        <com.healthyfood.eatrite.custom.CustomEditText
+            android:id="@+id/password_edit_register_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            />
+        <com.healthyfood.eatrite.custom.CustomButton
+            android:id="@+id/register_button_register_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            />
+
+        </LinearLayout>
+
+
+</RelativeLayout>

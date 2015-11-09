@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/toolbar_all_dishes_activity"
+        layout="@layout/layout_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <com.healthyfood.eatrite.custom.CustomButton
+        android:id="@+id/place_order_button_all_dishes_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="CHECK OUT"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_all_dishes_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/margin_small"
+        android:layout_below="@id/toolbar_all_dishes_activity"
+        android:layout_above="@id/place_order_button_all_dishes_activity"
+        />
+
+
+</RelativeLayout>

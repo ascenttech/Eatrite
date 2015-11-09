@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_smoke">
+
+    <include
+        android:id="@+id/toolbar_order_summary_activity"
+        layout="@layout/layout_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/toolbar_order_summary_activity"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/address_layout_address_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <com.healthyfood.eatrite.custom.CustomButton
+                android:id="@+id/savedAddress_button_address_activity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Select Your Address" />
+
+            <com.healthyfood.eatrite.custom.CustomButton
+                android:id="@+id/newAddress_button_address_activity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="ADD A NEW ADDRESS" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/newAddress_layout_address_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/white_smoke"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.healthyfood.eatrite.custom.CustomEditText
+                        android:id="@+id/add1_edit_address_activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address Line 1" />
+
+                    <com.healthyfood.eatrite.custom.CustomEditText
+                        android:id="@+id/add2_edit_address_activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address Line 1" />
+
+                    <com.healthyfood.eatrite.custom.CustomEditText
+                        android:id="@+id/landmark_edit_address_activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Landmark" />
+
+                    <Spinner
+                        android:id="@+id/pin_spinner_address_activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Spinner
+                        android:id="@+id/city_spinner_address_activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Spinner
+                        android:id="@+id/state_spinner_address_activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <com.healthyfood.eatrite.custom.CustomButton
+                        android:id="@+id/saveAddress_button_address_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Save Address and Place Order" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.healthyfood.eatrite.custom.CustomButton
+        android:id="@+id/selectAddress_button_address_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"
+        android:text="Select Address"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
